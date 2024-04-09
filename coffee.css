@@ -5,7 +5,7 @@
     --main-color: #d3ad7f;
     --black:#13131a;
     --bg: #010103;
-    --border: .3rem solid rgba(94, 72, 72, 0.3);
+    --border: .1rem solid rgba(255, 255, 255, .3);
 
 }
 
@@ -55,7 +55,6 @@ section{
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size:4rem;
-    text-decoration: underline;
 }
 
 .heading span{
@@ -156,77 +155,6 @@ section{
     color: var(--main-color);
 }
 
-
-#cart-btn .quantity{
-    bottom:30px;
-}
-
-.header .icons .fas .quantity{
-    background: var(--main-color);
-    border-radius: 50%;
-    
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    
-    top:-5px;
-    left:80%;
-    padding:1.5px 7px;
-}
-
-.header .cart-items-container .card{
-    position: fixed;
-    top:0;
-    left: 100%;
-    width:500px;
-    background-color: #dadada;
-    border-left: 1px solid #560bad;
-    height:100vh;
-    transition:0.5s;
-    -webkit-transition:0.5s;
-    -moz-transition:0.5s;
-    -ms-transition:0.5s;
-    -o-transition:0.5s;
-}
-
-.header .cart-items-container .card h1{
-    color:#560bad;
-    font-weight: 300;
-    margin: 0;
-    padding: 0 20px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-.header .cart-items-container .card .checkOut{
-    position: absolute;
-    bottom:0;
-    width:100%;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.header .cart-items-container .card .checkOut div{
-    background-color: #560bad;
-    color:#fff;
-    width:100%;
-    height:70px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    cursor:pointer;
-}
-.header .cart-items-container .card .checkOut div:nth-child(2){
-    background-color:#FFFF03;
-    color:#fff;
-}
-
-.header .icons{
-    display: flex;
-}
-
-
-
 .header .cart-items-container{
     position: absolute;
     top: 100%; right:-100%; 
@@ -280,8 +208,6 @@ section{
     text-align: center;
 
 }
-
-
 
 .home{
     min-height: 100vh;
@@ -349,7 +275,7 @@ section{
 .menu .box-container .box{
     padding: 5rem;
     text-align:center;
-    border: .1rem solid #AAACB0;
+    border:val(--border);
 }
 
 .menu .box-container .box img{
@@ -361,7 +287,7 @@ section{
     font-size: 2rem;
     padding: 1rem, 0;
 }
-.heading
+
 .menu .box-container .box .price{
     color: #fff;
     font-size: 2.5rem;
@@ -388,7 +314,7 @@ section{
 
 .products .box-container .box{
     text-align: center;
-    border: .1rem solid #AAACB0;
+    border:val(--border);
     padding: 2rem;
 }
 
@@ -397,7 +323,7 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    border: .1rem solid #AAACB0;
+    border: var(--border);
     color: #fff;
     margin: .3rem;
 }
@@ -437,175 +363,8 @@ section{
     font-size:1.5rem;
 }
 
-.review .box-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
 
 
-.review .box-container .box{
-    text-align: center;
-    border:val(--border);
-    padding: 3rem 2rem;
-}
-.review .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-}
-.review .box-container .box .user{
-    height:7rem;
-    width:7rem;
-    border-radius:50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding: 1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-.review .box-container .box .stars{
-    font-size: 1.5rem;
-    color:var(--main-color);
-}
-.contact .row{
-    display:flex;
-    align-items:center;
-    background:var(--black);
-    flex-wrap: wrap;
-    gap:1rem;
-}
-.contact .row .map{
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.contact .row form{
-    flex: 1 1 45rem;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-.contact .row form h3{
-    text-transform:uppercase;
-    font-size: 3.5rem;
-    color:#fff;
-}
-.contact .row form .inputBox{
-    display: flex;
-    align-items:center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: var(--bg);
-    border: 0.2rem solid #FFFF03;
-}
-.contact .row form .inputBox span{
-    color:#fff;
-    font-size: 2rem;
-    padding-left: 2rem;
-}
-.contact .row form .inputBox input{
-    width:100%;
-    padding:2rem;
-    font-size:1.7rem;
-    color:#fff;
-    text-transform: none;
-    background: none;
-}
-.contact .row form .inputBox textarea{
-    width:100%;
-    padding:2rem;
-    font-size:1.7rem;
-    color:#fff;
-    text-transform: none;
-    background: none;
-    
-}
-.blogs .box-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.blogs .box-container .box{
-    text-align: center;
-    padding: 3rem 2rem;
-}
-.blogs .box-container .box .pic{
-    height:25rem;
-    width:100%;
-    
-    object-fit: cover;
-}
-
-.blogs .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-    font-weight: lighter;
-    text-align:left;
-}
-.blogs .box-container .box h3{
-    padding: 1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-.blogs .box-container .box h4{
-    padding: 1rem 0;
-    font-size: 1.8rem;
-    color:var(--main-color);
-}
-.footer{
-    background:var(--black);
-    text-align: center;  
-}
-.footer .share{
-    padding: 1rem 0;
-}
-.footer .share a{
-    height:5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:#fff;
-    border: .1rem solid #aaacb0;
-    margin: .3rem;
-    border-radius: 50%;
-}
-
-.footer .share a:hover{
-    background-color: var(--main-color);
-}
-.footer .links{
-    display:flex;
-    justify-content: center;
-    flex-wrap:wrap;
-    padding: 2rem 0;
-    gap: 1rem;
-}
-
-.footer .links a{
-    padding: .7rem 2rem;
-    color: #fff;
-    border: .1rem solid #aaacb0;
-    font-size:2rem;
-}
-.footer .links a:hover{
-    background-color: var(--main-color);
-}
-.footer .credit{
-    font-size:2rem;
-    color:#fff;
-    font-weight:lighter;
-    padding:1.5rem;
-}
-.footer .credit span{
-    color:var(--main-color);
-}
 
 
 
